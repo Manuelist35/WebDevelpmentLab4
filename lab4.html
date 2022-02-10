@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let name1 = "Marlene"; // Here we are defining our variables names which in those cases are strings
+        let name2 = "Jose";
+        let name3 = "Manuel";
+        let name4 = "Ivan";
+        let name5= "Hera";
+
+        let name1spreaded = ([...name1]) // here we are using the spread command in order for us to be able to deconstruct the string "name1" so in that way we can get the initial of every given string, and we made it change from a string to an array, so then we can use the index to acces the first letter to sort it 
+        console.log(name1spreaded);
+
+        function ascendingOrder(arr) {
+            return arr.sort(function(a, b) {
+                return a - b;
+            });
+        }
+    </script>
+</body>
+</html>
